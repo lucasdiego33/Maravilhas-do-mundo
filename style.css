@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope&family =Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body{
+    background-color: dimgrey;
+}
+
+header {
+     width: 80%;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     z-index: 3;
+     position: relative;
+     margin: auto;
+     
+}
+
+header a {
+    margin-right: 40px;
+    color: azure;
+    font-weight: 400 ;
+    font-size: 25px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -50px;
+    overflow: hidden;
+}
+
+.itens {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  
+}
+
+
+.itens img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    
+}
+
+.conteudo {
+    position: absolute;
+    top: 17%;
+    right: 10%;
+    padding-right: 30%;
+    width: 80%;
+    color: rgb(239, 239, 211);
+    text-shadow: 0px 4px 10px rgb(139, 129, 129);
+}
+.nomes {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+p {
+    width: 60%;
+    font-size: 1.2em;
+    font-weight: 700;
+   
+    
+}
+
+.buttons{
+   display: grid;
+   grid-template-columns: repeat(2, 130px);
+   grid-template-rows: 50px;
+   margin-top: 20px;
+   gap: 15px;
+  
+  
+}
+
+.buttons button {
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 38px;
+   
+   
+}
+
+.buttons button:hover {
+  background-color: transparent;
+  border: 1px solid cornsilk;
+  transition: 0.6s;
+  color:   cornsilk;
+}
+
+
+.buttons button:nth-child(2){
+      background-color: transparent;
+      border:1px  solid rgb(255, 250, 250);
+      color:cornsilk;
+     
+}
+
+.buttons button:nth-child(2):hover {
+     background-color: cornsilk;
+     color: rgb(7, 7, 7);
+     transition: 0.8s;
+     border:  none;
+   
+}
+
+
+.caixinhas{
+    position: absolute;
+    bottom: 42px;
+    margin-left: 42%;
+    display: flex;
+    gap: 12px;
+   
+}
+
+
+
+
+.itens2{
+    width: 155px;
+    height: 210px;
+    position: relative;
+   
+}
+
+.itens2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: brightness(80%);
+   
+}
+
+.cidades {
+    position: absolute;
+    bottom: 87%;
+    left: 10px;
+    font-size: 10px;
+    text-shadow: 1px 4px 10px black;
+  
+   
+    
+}
+
+.btn{
+   display: flex;
+   position: absolute;
+   bottom: 120px;
+   left: 20%;
+   width: 180px;
+   align-items: center;
+   gap: 10px;
+  
+}
+
+.btn button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eee4;
+    color:  cornsilk ;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btn button:hover {
+    background-color: cornsilk;
+    color: black;
+    transition: 0.6s;
+ 
+   
+}
+
+/* animações */
+
+.container .list .itens:nth-last-child(1) .conteudo .nomes{
+    transform: translateY(50px);
+    filter: blur(20px); 
+    opacity: 0;
+    animation:show 0.5s 1s linear 1 forwards ;
+}
+@keyframes show {
+    to {
+        transform: translateY(0); 
+        filter: blur(0); 
+        opacity: 1;
+    }
+
+   
+}
+
+
+
+
+
+
